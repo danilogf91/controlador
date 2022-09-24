@@ -1,6 +1,14 @@
 {
   "files.associations": {
     "string": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "array": "cpp",
+    "deque": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "vector": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp",
+    "new": "cpp"
   }
 }
