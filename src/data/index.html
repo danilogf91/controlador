@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LED Control</title>
+    <link rel="icon" href="/esp32.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>ESP32 Web simple_web_server</h1>
+    <h3>Using Access Point(AP) Mode</h3>
+
+    <!-- if(simple_web_server.get_led_state(LED_1)) -->
+    <p>GPIO#GPIO1# Status: <span id="led1_status"> #GPIO1_STATUS#</span></p>
+    <a id="led1" class="button #GPIO1_CLASE#" onclick="led1()"
+      >#GPIO1_STATUS#</a
+    >
+
+    <!-- if(simple_web_server.get_led_state(LED_1)) -->
+    <p>GPIO#GPIO2# Status: <span id="led2_status"> #GPIO2_STATUS#</span></p>
+    <a id="led2" class="button #GPIO2_CLASE#" onclick="led2()"
+      >#GPIO2_STATUS#</a
+    >
+  </body>
+  <script src="index.js"></script>
+</html>
