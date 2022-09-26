@@ -5,8 +5,9 @@
 #include "controlador.h"
 #include "log.h"
 
-
 #include "data_async.h"
+#include "conection.h"
+
 
 Controlador esp;
 
@@ -15,6 +16,8 @@ Controlador esp;
 void setup ()
 {
   Serial.begin (BAUDIOS);
+
+  //create_task_led_wifi ();
 
   log_coments ("");
   log_coments ("Inicializar puerto Serial a " + ( String ) BAUDIOS + " Baudios");
@@ -33,10 +36,11 @@ void setup ()
   esp.station_mode_start ();
   log_coments ("Arranca la conexion a la red WiFi en modo STA");
 
-  async_server_init();
+  async_server_init ();
 }
 
 void loop ()
 {
+
 
 }
